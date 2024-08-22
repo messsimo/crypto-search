@@ -44,42 +44,60 @@
 
     <div class="main-crypto">
         <div class="block">
-            <img src="{{ asset('images/') }}" alt="">
+            <img src="{{ asset('images/btc.png') }}" alt="Bitcoin">
             <div class="container-block">
-                <h1></h1>
-                <span></span>
+                <h1>{{ $cryptos['bitcoin']['name'] }}</h1>
+                @php
+                    $priceChangePercentage = $cryptos['bitcoin']['price_change_percentage_24h'];
+                    $sign = $priceChangePercentage >= 0 ? '+' : '';
+                @endphp
+                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
             </div>
-            <h2>$</h2>
+            <h2>$ {{ number_format($cryptos['bitcoin']['current_price'], 2) }}</h2>
         </div>
 
         <div class="block">
-            <img src="{{ asset('images/') }}" alt="">
+            <img src="{{ asset('images/eth.png') }}" alt="Etherium">
             <div class="container-block">
-                <h1></h1>
-                <span></span>
+                <h1>{{ $cryptos["ethereum"]["name"] }}</h1>
+                @php
+                    $priceChangePercentage = $cryptos['ethereum']['price_change_percentage_24h'];
+                    $sign = $priceChangePercentage >= 0 ? '+' : '';
+                @endphp
+                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
             </div>
-            <h2>$</h2>
+            <h2>$ {{ number_format($cryptos['ethereum']['current_price'], 2) }}</h2>
         </div>
 
         <div class="block">
-            <img src="{{ asset('images/') }}" alt="">
+            <img src="{{ asset('images/tether.png') }}" alt="Tether">
             <div class="container-block">
-                <h1></h1>
-                <span></span>
+                <h1>{{ $cryptos["tether"]["name"] }}</h1>
+                @php
+                    $priceChangePercentage = $cryptos['tether']['price_change_percentage_24h'];
+                    $sign = $priceChangePercentage >= 0 ? '+' : '';
+                @endphp
+                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
             </div>
-            <h2>$</h2>
+            <h2>$ {{ number_format($cryptos['tether']['current_price'], 2) }}</h2>
         </div>
 
         <div class="block">
-            <img src="{{ asset('images/') }}" alt="">
+            <img src="{{ asset('images/bnb.png') }}" alt="BNB">
             <div class="container-block">
-                <h1></h1>
-                <span></span>
+                <h1>{{ $cryptos["binancecoin"]["name"] }}</h1>
+                @php
+                    $priceChangePercentage = $cryptos['binancecoin']['price_change_percentage_24h'];
+                    $sign = $priceChangePercentage >= 0 ? '+' : '';
+                @endphp
+                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
             </div>
-            <h2>$</h2>
+            <h2>$ {{ number_format($cryptos['binancecoin']['current_price'], 2) }}</h2>
         </div>
     </div>
 </div>
+
+<pre><?php print_r($cryptos) ?></pre>
 
 </div>
 @endsection

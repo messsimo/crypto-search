@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// Подключение контроллеров
+use App\Http\Controllers\CryptoController;
 
-// Отображение главной страницы
-Route::get('/', function () {
-    return view('main');
-});
+// Обработчик главной страницы
+Route::get('/', [CryptoController::class, 'showPrice']);

@@ -176,3 +176,7 @@ header .socials svg:last-child {
     margin-top: 3px;
     color: rgb(9, 187, 9)
 }
+
+pre {
+    background-color: white;
+}
