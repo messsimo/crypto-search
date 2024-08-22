@@ -47,11 +47,20 @@
             <img src="{{ asset('images/btc.png') }}" alt="Bitcoin">
             <div class="container-block">
                 <h1>{{ $mainCryptos['bitcoin']['name'] }}</h1>
-                @php
-                    $priceChangePercentage = $mainCryptos['bitcoin']['price_change_percentage_24h'];
-                    $sign = $priceChangePercentage >= 0 ? '+' : '';
-                @endphp
-                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
+                <!-- Определение значений и стилей в зависимоти от состояния -->
+                <?php
+                    $price = $mainCryptos['bitcoin']['price_change_percentage_24h'];
+                    $precentClass = $price < 0 ? 'precent-down' : 'precent-up';
+                    $precent = number_format(($price), 2);
+                ?>
+
+                <span class="{{ $precentClass}}">
+                    @if ($price < 0)
+                        {{ $precent }}%
+                    @else
+                        +{{ $precent }}%
+                    @endif
+                </span>
             </div>
             <h2>$ {{ number_format($mainCryptos['bitcoin']['current_price'], 2) }}</h2>
         </div>
@@ -60,11 +69,20 @@
             <img src="{{ asset('images/eth.png') }}" alt="Etherium">
             <div class="container-block">
                 <h1>{{ $mainCryptos["ethereum"]["name"] }}</h1>
-                @php
-                    $priceChangePercentage = $mainCryptos['ethereum']['price_change_percentage_24h'];
-                    $sign = $priceChangePercentage >= 0 ? '+' : '';
-                @endphp
-                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
+                <!-- Определение значений и стилей в зависимоти от состояния -->
+                <?php
+                    $price = $mainCryptos['ethereum']['price_change_percentage_24h'];
+                    $precentClass = $price < 0 ? 'precent-down' : 'precent-up';
+                    $precent = number_format(($price), 2);
+                ?>
+
+                <span class="{{ $precentClass}}">
+                    @if ($price < 0)
+                        {{ $precent }}%
+                    @else
+                        +{{ $precent }}%
+                    @endif
+                </span>
             </div>
             <h2>$ {{ number_format($mainCryptos['ethereum']['current_price'], 2) }}</h2>
         </div>
@@ -73,11 +91,20 @@
             <img src="{{ asset('images/tether.png') }}" alt="Tether">
             <div class="container-block">
                 <h1>{{ $mainCryptos["tether"]["name"] }}</h1>
-                @php
-                    $priceChangePercentage = $mainCryptos['tether']['price_change_percentage_24h'];
-                    $sign = $priceChangePercentage >= 0 ? '+' : '';
-                @endphp
-                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
+                <!-- Определение значений и стилей в зависимоти от состояния -->
+                <?php
+                    $price = $mainCryptos['tether']['price_change_percentage_24h'];
+                    $precentClass = $price < 0 ? 'precent-down' : 'precent-up';
+                    $precent = number_format(($price), 2);
+                ?>
+
+                <span class="{{ $precentClass}}">
+                    @if ($price < 0)
+                        {{ $precent }}%
+                    @else
+                        +{{ $precent }}%
+                    @endif
+                </span>
             </div>
             <h2>$ {{ number_format($mainCryptos['tether']['current_price'], 2) }}</h2>
         </div>
@@ -86,11 +113,20 @@
             <img src="{{ asset('images/bnb.png') }}" alt="BNB">
             <div class="container-block">
                 <h1>{{ $mainCryptos["binancecoin"]["name"] }}</h1>
-                @php
-                    $priceChangePercentage = $mainCryptos['binancecoin']['price_change_percentage_24h'];
-                    $sign = $priceChangePercentage >= 0 ? '+' : '';
-                @endphp
-                <span>{{ $sign . number_format($priceChangePercentage, 2) }}%</span>
+                <!-- Определение значений и стилей в зависимоти от состояния -->
+                <?php
+                    $price = $mainCryptos['binancecoin']['price_change_percentage_24h'];
+                    $precentClass = $price < 0 ? 'precent-down' : 'precent-up';
+                    $precent = number_format(($price), 2);
+                ?>
+
+                <span class="{{ $precentClass}}">
+                    @if ($price < 0)
+                        {{ $precent }}%
+                    @else
+                        +{{ $precent }}%
+                    @endif
+                </span>
             </div>
             <h2>$ {{ number_format($mainCryptos['binancecoin']['current_price'], 2) }}</h2>
         </div>
@@ -112,12 +148,25 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($cryptos as $index => $crypto)
+        @foreach ($cryptos as $crypto)
+            <!-- Определение значений и стилей в зависимоти от состояния -->
+            <?php
+                $price = $crypto['price_change_percentage_24h'];
+                $precentClass = $price < 0 ? 'precent-down' : 'precent-up';
+                $precent = number_format(($price), 2);
+            ?>
+
             <tr>
                 <td class="id">{{ $crypto['market_cap_rank'] }}</td>
                 <td class="name-crypto"><img src="{{ $crypto['image'] }}" alt="{{ $crypto['name'] }} Logo">{{ $crypto['symbol'] }}</td>
                 <td>${{ number_format($crypto['current_price'], 2) }}</td>
-                <td class="precentage">{{ $crypto['price_change_percentage_24h'] }}%</td>
+                <td class="{{ $precentClass }}">
+                    @if ($price < 0)
+                        {{ $precent }}%
+                    @else
+                        +{{ $precent }}%
+                    @endif
+                </td>
                 <td>${{ number_format($crypto['total_volume'], 0) }}</td>
             </tr>
         @endforeach

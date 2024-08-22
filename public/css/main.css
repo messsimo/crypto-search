@@ -183,7 +183,14 @@ header .socials svg:last-child {
     font-size: 18px;
     margin-left: 10px;
     margin-top: 3px;
-    color: rgb(9, 187, 9)
+}
+
+.hero .main-crypto .block .container-block .precent-up {
+    color: rgb(1, 218, 1);
+}
+
+.hero .main-crypto .block .container-block .precent-down {
+    color: red;
 }
 
 /* Cтили для таблицы монет */
@@ -270,10 +277,15 @@ header .socials svg:last-child {
     vertical-align: top;
 }
 
-.crypto-market table tbody tr .precentage {
-    color: rgb(9, 187, 9);
+.crypto-market table tbody tr .precent-up {
+    color: rgb(1, 218, 1);
 }
 
+.crypto-market table tbody tr .precent-down {
+    color: red;
+}
+
+/* Пагинация */
 .pagination {
     display: flex;
     justify-content: center;
