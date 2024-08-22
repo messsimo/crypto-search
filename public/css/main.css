@@ -20,20 +20,12 @@ button {
 }
 
 .wrapper {
-    background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%);
-    height: 5000px;
+    /* background-image: linear-gradient(0deg, #0f051d 15%, #130749 85%); */
+    background: rgb(15,5,29);
+    background: linear-gradient(180deg, rgba(15,5,29,1) 0%, rgba(19,7,73,1) 100%);
 }
 
 /* Стили для шапки сайта */
-header {
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 200;
-    box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.8);
-}
-
 header .container-header {
     display: flex;
     justify-content: space-between;
@@ -92,4 +84,95 @@ header .socials svg {
 
 header .socials svg:last-child {
     margin-right: 0;
+}
+
+/* Стили для секции Hero */
+.hero {
+    padding: 100px;
+}
+
+.hero .hero-texts {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.hero .hero-texts h1 {
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-weight: bolder;
+    line-height: 100px;
+}
+
+.hero .hero-texts span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+    font-weight: bolder;
+    font-size: 120px;
+    margin-top: -20px;
+    line-height: 100px;
+}
+
+.hero .hero-texts img {
+    width: 75px;
+    height: 75px;
+    animation: swim 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateY(+6px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(+6px);
+    }
+}
+
+.hero .main-crypto {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.hero .main-crypto .block {
+    margin-right: 130px;
+    width: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.hero .main-crypto .block:last-child {
+    margin-right: 0;
+}
+
+.hero .main-crypto .block img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.hero .main-crypto .block .container-block {
+    display: flex;
+}
+
+.hero .main-crypto .block h1,
+.hero .main-crypto .block h2,
+.hero .main-crypto .block span {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.hero .main-crypto .block span {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 3px;
+    color: rgb(9, 187, 9)
 }

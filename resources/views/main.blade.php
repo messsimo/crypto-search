@@ -29,5 +29,57 @@
     </div>
 </header>
 
+<!-- Блок Hero -->
+<div class="hero">
+    <div class="hero-texts">
+        <img src="{{ asset('images/bitcoin.png') }}" alt="Bitcoin">
+
+        <div class="main-text">
+            <h1>Track and Trade</h1>
+            <span>Crypto currencies</span>
+        </div>
+
+        <img src="{{ asset('images/ethereum.png') }}" alt="Ethereum">
+    </div>
+
+    <div class="main-crypto">
+        <div class="block">
+            <img src="{{ asset('images/') }}" alt="">
+            <div class="container-block">
+                <h1></h1>
+                <span></span>
+            </div>
+            <h2>$</h2>
+        </div>
+
+        <div class="block">
+            <img src="{{ asset('images/') }}" alt="">
+            <div class="container-block">
+                <h1></h1>
+                <span></span>
+            </div>
+            <h2>$</h2>
+        </div>
+
+        <div class="block">
+            <img src="{{ asset('images/') }}" alt="">
+            <div class="container-block">
+                <h1></h1>
+                <span></span>
+            </div>
+            <h2>$</h2>
+        </div>
+
+        <div class="block">
+            <img src="{{ asset('images/') }}" alt="">
+            <div class="container-block">
+                <h1></h1>
+                <span></span>
+            </div>
+            <h2>$</h2>
+        </div>
+    </div>
+</div>
+
 </div>
 @endsection
