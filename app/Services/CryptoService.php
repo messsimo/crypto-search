@@ -14,7 +14,7 @@ class CryptoService
         ]);
     }
 
-    public function getTopCryptos($limit = 30)
+    public function getTopCryptos($limit = 50)
     {
         $response = $this->client->get("coins/markets", [
             'query' => [

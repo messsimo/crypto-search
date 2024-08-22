@@ -19,6 +19,14 @@ button {
     border: none;
 }
 
+pre {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     /* background-image: linear-gradient(0deg, #0f051d 15%, #130749 85%); */
     background: rgb(15,5,29);
@@ -159,6 +167,7 @@ header .socials svg:last-child {
 
 .hero .main-crypto .block .container-block {
     display: flex;
+    padding-bottom: 5px;
 }
 
 .hero .main-crypto .block h1,
@@ -177,6 +186,125 @@ header .socials svg:last-child {
     color: rgb(9, 187, 9)
 }
 
-pre {
-    background-color: white;
+/* Cтили для таблицы монет */
+.crypto-market {
+    padding: 25px 100px;
+    padding-bottom: 100px;
+}
+
+.crypto-market h1 {
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 25px;
+    font-size: 48px;
+}
+
+.crypto-market table {
+    width: 100%;
+    border-collapse: collapse; 
+    overflow: hidden;
+}
+
+.crypto-market table thead {
+    background-color: rgb(89, 0, 255);
+    border-radius: 10px 10px 0 0; 
+}
+
+.crypto-market table thead tr th {
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.crypto-market table thead tr .id {
+  padding-left: 20px;
+}
+
+.crypto-market table thead tr th:last-child {
+    border-radius: 0 10px 0 0; 
+}
+
+.crypto-market table thead tr th:first-child {
+    border-radius: 10px 0 0 0; 
+}
+
+.crypto-market table tbody tr td {
+    padding-top: 15px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.crypto-market table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: 0.2s ease-in-out;
+}
+
+.crypto-market table tbody tr:hover {
+    background-color: rgba(209, 209, 209, 0.2);
+}
+
+.crypto-market table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.crypto-market table tbody tr .id {
+    padding-left: 20px;
+}
+
+.crypto-market table tbody tr td img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    vertical-align: bottom;
+}
+
+.crypto-market table tbody tr .name-crypto {
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.crypto-market table tbody tr .precentage {
+    color: rgb(9, 187, 9);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.pagination ul li {
+    font-size: 20px;
+}
+
+.page-item.active .page-link {
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: white;
+    padding: 3px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.page-item.active .page-link:hover {
+    opacity: 0.7;
+}
+
+.page-link {
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
 }
