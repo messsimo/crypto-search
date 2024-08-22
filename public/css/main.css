@@ -1,0 +1,95 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+/* Базовые стили для элементов */
+* {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.wrapper {
+    background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%);
+    height: 5000px;
+}
+
+/* Стили для шапки сайта */
+header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.8);
+}
+
+header .container-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+
+header h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+header nav {
+    padding-top: 5px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    color: white;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+header nav ul li:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+}
+
+header nav ul a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+header nav ul a:last-child {
+    margin-right: 0;
+}
+
+header .socials {
+    display: flex;
+    padding-top: 5px;
+}
+
+header .socials svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 35px;
+    color: white;
+}
+
+header .socials svg:last-child {
+    margin-right: 0;
+}
