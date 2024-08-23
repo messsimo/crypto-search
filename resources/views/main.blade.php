@@ -246,5 +246,23 @@
     </div>
 </div>
 
+<!-- Секция с Дискордом -->
+<div class="discord">
+    <div class="discord-text">
+        <img src="{{ asset('images/bitcoin.png') }}" alt="Bitcoin">
+
+        <div class="main-text">
+            <h1>JOIN US VIA</h1>
+            <span сlass="text-gradient">DISCORD</span>
+        </div>
+
+        <img src="{{ asset('images/ethereum.png') }}" alt="Ethereum">
+    </div>
+
+    <span class="span-text">Invest and manage all your crypto at one place.</span>
+
+    <a href="https://discord.com">Join via Discord</a>
+</div>
+
 </div>
 @endsection

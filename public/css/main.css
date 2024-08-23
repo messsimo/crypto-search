@@ -30,7 +30,7 @@ a {
 .wrapper {
     /* background-image: linear-gradient(0deg, #0f051d 15%, #130749 85%); */
     background: rgb(15,5,29);
-    background: linear-gradient(180deg, rgba(15,5,29,1) 0%, rgba(19,7,73,1) 100%);
+    background: linear-gradient(180deg, rgba(15,5,29,1) 100%, rgba(19,7,73,1) 0%);
 }
 
 /* Стили для шапки сайта */
@@ -323,7 +323,7 @@ header .socials svg:last-child {
 
 /* Стили для секции с Преимуществами */
 .advantages {
-    padding: 100px;
+    padding: 25px 100px;
 }
 
 .advantages .main-text  {
@@ -344,11 +344,6 @@ header .socials svg:last-child {
 .advantages .container-advantages {
     display: flex;
     padding-top: 100px;
-}
-
-.advantages .container-advantages .lateral {
-    /* min-width: 33%;
-    max-width: 33%; */
 }
 
 .advantages .container-advantages .lateral .block {
@@ -393,4 +388,84 @@ header .socials svg:last-child {
     width: 25%;
     height: 25%;
     padding-top: 90px;
+}
+
+/* Стили для секции с Дискордом */
+.discord {
+    padding: 25px 100px;
+    display: grid;
+    place-items: center;
+}
+
+.discord .discord-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.discord .discord-text .main-text {
+    display: grid;
+    place-items: center;
+}
+
+.discord .discord-text .main-text h1 {
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-weight: bolder;
+    line-height: 100px;
+}
+
+.discord .discord-text .main-text span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+    font-weight: bolder;
+    font-size: 120px;
+    margin-top: -20px;
+    line-height: 100px;
+    padding-top: 25px;
+}
+
+.discord .discord-text img {
+    width: 75px;
+    height: 75px;
+    animation: swim 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    margin: 35px 15px 0 15px;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateY(+6px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(+6px);
+    }
+}
+
+.discord .span-text {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.discord a {
+    color: white;
+    font-size: 18px;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    padding: 20px 45px;
+    border-radius: 30px;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.discord a:hover {
+    opacity: 0.8;
 }
