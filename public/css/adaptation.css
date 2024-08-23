@@ -308,3 +308,31 @@
         font-size: 16px;
     }
 }
+
+/* Адапация для футера */
+@media (max-width: 980px) {
+    footer {
+        background-image: none;
+    }
+}
+
+@media (max-width: 440px) {
+    footer .footer-content .socials svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .footer-content .privacy span {
+        font-size: 16px;
+    }
+
+    footer .footer-content .socials {
+        display: flex;
+    }
+
+    footer .footer-content .privacy {
+        display: grid;
+        place-items: center;
+        padding-top: 0;
+    }
+}
