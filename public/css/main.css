@@ -320,3 +320,77 @@ header .socials svg:last-child {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Стили для секции с Преимуществами */
+.advantages {
+    padding: 100px;
+}
+
+.advantages .main-text  {
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    font-weight: bold;
+}
+
+.advantages .main-text span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+    font-weight: bold;
+}
+
+.advantages .container-advantages {
+    display: flex;
+    padding-top: 100px;
+}
+
+.advantages .container-advantages .lateral {
+    /* min-width: 33%;
+    max-width: 33%; */
+}
+
+.advantages .container-advantages .lateral .block {
+    background-color: hsla(0, 0%, 100%, .05);
+    border: 1px solid hsla(0, 0%, 51%, .25);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 25px;
+
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 400px;
+}
+
+.advantages .container-advantages .lateral .block svg {
+    color: white;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.advantages .container-advantages .lateral .block .container-block {
+    padding-left: 25px;
+}
+
+.advantages .container-advantages .lateral .block .container-block h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.advantages .container-advantages .lateral .block .container-block span {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.advantages .container-advantages img {
+    padding: 0 50px;
+    width: 25%;
+    height: 25%;
+    padding-top: 90px;
+}

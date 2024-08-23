@@ -158,7 +158,7 @@
 
             <tr>
                 <td class="id">{{ $crypto['market_cap_rank'] }}</td>
-                <td class="name-crypto"><img src="{{ $crypto['image'] }}" alt="{{ $crypto['name'] }} Logo">{{ $crypto['symbol'] }}</td>
+                <td class="name-crypto"><img src="{{ $crypto['image'] }}" alt="{{ $crypto['name'] }} Logo">{{ strtoupper($crypto['symbol']) }}</td>
                 <td>${{ number_format($crypto['current_price'], 2) }}</td>
                 <td class="{{ $precentClass }}">
                     @if ($price < 0)
@@ -179,7 +179,72 @@
     </div>
 </div>
 
-<!-- <pre><?php print_r($cryptos) ?></pre> -->
+<!-- Блок с Преимуществами -->
+<div class="advantages">
+    <h1 class="main-text">WHY <span>CHOOSE US</span></h1>
+
+    <div class="container-advantages">
+        <div class="lateral">
+            <div class="block">
+                <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-wallet"><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12"></path><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>CONNECT YOUR WALLET</h1>
+                    <span>Use Trust Wallet, Metamask or to connect to the app.</span>
+                </div>
+            </div>
+
+            <div class="block">
+                <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-pencil-bolt"><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path><path d="M13.5 6.5l4 4"></path><path d="M19 16l-2 3h4l-2 3"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>SELECT YOUR QUANTITY</h1>
+                    <span>Upload your crypto and set a title, description and price.</span>
+                </div>
+            </div>
+
+            <div class="block">
+            <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-checklist"><path d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8"></path><path d="M14 19l2 2l4 -4"></path><path d="M9 8h4"></path><path d="M9 12h2"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>CONFIRM TRANSACTION</h1>
+                    <span>Earn by selling your crypto on our marketplace.</span>
+                </div>
+            </div>
+        </div>
+
+        <img src="{{ asset('images/hand-coin.png') }}" alt="213">
+
+        <div class="lateral">
+            <div class="block">
+            <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-device-mobile-message"><path d="M11 3h10v8h-3l-4 2v-2h-3z"></path><path d="M15 16v4a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h2"></path><path d="M10 18v.01"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>RECEIVE YOUR OWN NFTS</h1>
+                    <span>Invest all your crypto at one place on one platform.</span>
+                </div>
+            </div>
+
+            <div class="block">
+            <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-moneybag"><path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z"></path><path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>TAKE A MARKET TO SELL</h1>
+                    <span>Discover, collect the right crypto collections to buy or sell.</span>
+                </div>
+            </div>
+
+            <div class="block">
+            <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-stack"><path d="M12 6l-8 4l8 4l8 -4l-8 -4"></path><path d="M4 14l8 4l8 -4"></path></svg></i>
+
+                <div class="container-block">
+                    <h1>DRIVE YOUR COLLECTION</h1>
+                    <span>We make it easy to Discover, Invest and manage.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </div>
 @endsection
