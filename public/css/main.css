@@ -373,7 +373,7 @@ header .burger svg {
 
 /* Стили для секции с Преимуществами */
 .advantages {
-    padding: 25px 100px;
+    padding: 25px 50px;
 }
 
 .advantages .main-text  {
@@ -404,10 +404,10 @@ header .burger svg {
     padding: 30px;
     display: flex;
     margin-bottom: 25px;
-
-    min-height: 150px;
-    max-height: 150px;
-    max-width: 400px;
+    min-height: 170px;
+    max-height: 170px;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .advantages .container-advantages .lateral .block svg {
@@ -436,9 +436,9 @@ header .burger svg {
 
 .advantages .container-advantages img {
     padding: 0 50px;
-    width: 25%;
-    height: 25%;
-    padding-top: 90px;
+    width: 350px;
+    height: 400px;
+    padding-top: 120px;
 }
 
 /* Стили для секции с Дискордом */
