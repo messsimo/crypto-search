@@ -469,3 +469,53 @@ header .socials svg:last-child {
 .discord a:hover {
     opacity: 0.8;
 }
+
+/* Стили для футера */
+footer {
+    padding: 150px 100px;
+    background-image: url('/images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+footer .footer-content {
+    display: grid;
+    place-items: center;
+}
+
+footer .footer-content .socials svg {
+    color: white;
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+}
+
+footer .footer-content .socials svg:last-child {
+    margin-right: 0;
+}
+
+footer .footer-content .privacy {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+footer .footer-content .privacy span {
+    color: white;
+    margin-right: 15px;
+    padding-top: 15px;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer .footer-content .privacy span:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+}
+
+footer .footer-content .privacy span:last-child {
+    margin-right: 15px;
+}
