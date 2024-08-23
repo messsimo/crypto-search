@@ -34,12 +34,12 @@
 </header>
 
 <div class="container-burger">
-                <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Market</li></a>
-                    <a href="#"><li>Choose Us</li></a>
-                    <a href="#"><li>Join</li></a>
-                </ul>
+    <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Market</li></a>
+        <a href="#"><li>Choose Us</li></a>
+        <a href="#"><li>Join</li></a>
+    </ul>
 </div>
 
 <!-- Блок Hero -->

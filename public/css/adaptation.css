@@ -19,3 +19,99 @@
     }
 }
 
+/* Адаптация для блок Hero */
+@media (max-width: 1395px) {
+    .hero .hero-texts h1 {
+        font-size: 100px;
+    }
+
+    .hero .hero-texts span {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .hero {
+        padding: 100px 25px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .hero .hero-texts h1 {
+        font-size: 80px;
+    }
+
+    .hero .hero-texts span {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero .main-crypto {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+        place-items: center;
+    }
+
+    .hero .main-crypto .block {
+        margin-right: 0px;
+        margin-bottom: 50px;
+        width: 315px;
+    }
+}
+
+@media (max-width: 890px) {
+    .hero .hero-texts img {
+        display: none;
+    }
+}
+
+@media (max-width: 746px) {
+    .hero .hero-texts h1 {
+        font-size: 70px;
+        line-height: 30px;
+    }
+
+    .hero .hero-texts span {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 679px) {
+    .hero .hero-texts h1 {
+        font-size: 50px;
+        line-height: 30px;
+    }
+
+    .hero .hero-texts span {
+        font-size: 50px;
+    }
+
+    .hero .main-crypto {
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    }
+
+    .hero .main-crypto .block img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 485px) {
+    .hero {
+        padding: 100px 0px;
+    }
+
+    .hero .hero-texts h1 {
+        font-size: 40px;
+        line-height: 0px;
+    }
+
+    .hero .hero-texts span {
+        font-size: 40px;
+    }
+
+    .hero .main-crypto {
+        padding-top: 50px;
+    }
+}
