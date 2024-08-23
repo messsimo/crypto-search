@@ -94,6 +94,48 @@ header .socials svg:last-child {
     margin-right: 0;
 }
 
+.burger {
+    display: none;   
+}
+
+header .burger svg {
+    color: white;
+    height: 38px;
+    width: 38px;
+}
+
+.container-burger {
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+
+.container-burger ul {
+    list-style: none;
+    display: grid;
+    padding-top: 50px;
+    place-items: center;
+    width: 100%;
+}
+
+.container-burger ul li {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+.container-burger ul li:hover {
+    color: rgb(70, 70, 70);
+}
+
 /* Стили для секции Hero */
 .hero {
     padding: 100px;
@@ -343,6 +385,7 @@ header .socials svg:last-child {
 
 .advantages .container-advantages {
     display: flex;
+    justify-content: center;
     padding-top: 100px;
 }
 
@@ -392,7 +435,7 @@ header .socials svg:last-child {
 
 /* Стили для секции с Дискордом */
 .discord {
-    padding: 25px 100px;
+    padding: 50px 100px;
     display: grid;
     place-items: center;
 }

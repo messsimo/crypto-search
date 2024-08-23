@@ -1,0 +1,21 @@
+/* Адаптация щапки сайта */
+@media (max-width: 980px) {
+    header nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header .container-header {
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    header .container-header {
+        padding: 25px 25px;
+    }
+}
+
