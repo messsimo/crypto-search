@@ -115,3 +115,55 @@
         padding-top: 50px;
     }
 }
+
+/* Адаптация для криптко таблицы */
+@media (max-width: 980px) {
+    .crypto-market {
+        padding: 25px 25px;
+    }
+
+    .crypto-market h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .crypto-market table tbody tr .coin-volume,
+    .crypto-market table thead tr .coin-volume {
+        display: none;
+    }
+
+    .crypto-market table thead tr .coin-24h {
+        border-radius: 0 10px 0 0;
+    }
+    
+
+    .crypto-market table tbody tr .precent-down,
+    .crypto-market table tbody tr .precent-up {
+        text-align: center;
+    }
+
+    .crypto-market table tbody tr .id {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .crypto-market {
+        padding: 25px 10px;
+    }
+
+    .crypto-market table tbody tr .name-crypto {
+        display: grid;
+        place-items: center;
+        margin-top: 0;
+    }
+
+    .crypto-market table tbody tr td img {
+        margin-bottom: 5px;
+    }
+
+    .crypto-market table tbody tr .name-crypto span {
+        margin-left: -10px;
+    }
+}

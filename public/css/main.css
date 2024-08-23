@@ -272,11 +272,11 @@ header .burger svg {
 }
 
 .crypto-market table thead tr th:last-child {
-    border-radius: 0 10px 0 0; 
+    border-radius: 0 10px 0 0;
 }
 
 .crypto-market table thead tr th:first-child {
-    border-radius: 10px 0 0 0; 
+    border-radius: 10px 0 0 0;
 }
 
 .crypto-market table tbody tr td {
@@ -317,6 +317,14 @@ header .burger svg {
     font-size: 24px;
     font-weight: bold;
     vertical-align: top;
+}
+
+.crypto-market table tbody tr .name-crypto span {
+    font-weight: bold;
+}
+
+.crypto-market table tbody tr .coin-volume {
+    display: block;
 }
 
 .crypto-market table tbody tr .precent-up {

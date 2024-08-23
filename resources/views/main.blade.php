@@ -156,8 +156,8 @@
             <th class="id">#</th>
             <th>Coin</th>
             <th>Price</th>
-            <th>24h Change</th>
-            <th>24h Volume</th>
+            <th class="coin-24h">24h Change</th>
+            <th class="coin-volume">24h Volume</th>
         </tr>
     </thead>
     <tbody>
@@ -171,7 +171,7 @@
 
             <tr>
                 <td class="id">{{ $crypto['market_cap_rank'] }}</td>
-                <td class="name-crypto"><img src="{{ $crypto['image'] }}" alt="{{ $crypto['name'] }} Logo">{{ strtoupper($crypto['symbol']) }}</td>
+                <td class="name-crypto"><img src="{{ $crypto['image'] }}" alt="{{ $crypto['name'] }} Logo"><span>{{ strtoupper($crypto['symbol']) }}</span></td>
                 <td>${{ number_format($crypto['current_price'], 2) }}</td>
                 <td class="{{ $precentClass }}">
                     @if ($price < 0)
@@ -180,7 +180,7 @@
                         +{{ $precent }}%
                     @endif
                 </td>
-                <td>${{ number_format($crypto['total_volume'], 0) }}</td>
+                <td class="coin-volume">${{ number_format($crypto['total_volume'], 0) }}</td>
             </tr>
         @endforeach
     </tbody>
