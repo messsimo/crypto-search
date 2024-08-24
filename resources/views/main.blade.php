@@ -11,14 +11,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-menu"><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg>
         </div>
 
-        <h1>COINDOM</h1>
+        <a href="/"><h1>COINDOM</h1></a>
 
         <nav>
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Market</li></a>
-                <a href="#"><li>Choose Us</li></a>
-                <a href="#"><li>Join</li></a>
+                <a href="/"><li>Home</li></a>
+                <a href="#market"><li>Market</li></a>
+                <a href="#chooseus"><li>Choose Us</li></a>
+                <a href="#join"><li>Join</li></a>
             </ul>
         </nav>
 
@@ -147,7 +147,7 @@
 </div>
 
 <!-- Секция с таблицей крпитвалют -->
-<div class="crypto-market">
+<div class="crypto-market" id="market">
     <h1>Market Update</h1>
 
     <table>
@@ -193,7 +193,7 @@
 </div>
 
 <!-- Блок с Преимуществами -->
-<div class="advantages">
+<div class="advantages" id="chooseus">
     <h1 class="main-text">WHY <span>CHOOSE US</span></h1>
 
     <div class="container-advantages">
@@ -260,7 +260,7 @@
 </div>
 
 <!-- Секция с Дискордом -->
-<div class="discord">
+<div class="discord" id="join">
     <div class="discord-text">
         <img src="{{ asset('images/bitcoin.png') }}" alt="Bitcoin">
 
