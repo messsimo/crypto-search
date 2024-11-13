@@ -14,7 +14,7 @@ Coindom - Crypto Search is a web agency that secures your crypto wallet permissi
 
 1. Clone the repository:
     ```
-      git clone https://github.com/username/repository.git
+      git clone https://github.com/messsimo/crypto-search.git
     ```
 2. Go to the project directory:
     ```
